@@ -1,0 +1,149 @@
+/* Global Styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;   /* 1 rem = 10 px */
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 2.6rem;
+}
+
+li,label,input,button,p{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 4.8rem;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4,h5{
+    font-size: 2.8rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+button{
+    padding: 2rem 6rem;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Nav Section */
+.main-head{
+    background-color: #131c27;
+    color: white;
+}
+
+nav{
+    padding: 2rem;
+    min-height: 10vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    display: flex;
+    flex: 3 1 40rem;           /* for spacing Between List Elements */
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo{
+    flex: 2 1 40rem;    /* for spacing Between Logo */
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 400;
+}
+
+.hero{
+    min-height: 90vh;
+    background :linear-gradient(rgba(0,0,0,0.5), transparent), url("/media/img/landing-page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3{
+    padding: 5rem;
+}
+
+
+
+
+@media screen and (max-width:1050px){
+html{
+    font-size: 45%;
+}
+    nav{
+        text-align: center;
+
+    }
+    #logo{
+      padding: 2rem;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    body{
+        width: 100%;
+    }    
+    nav{
+            text-align: center;
+        }
+        nav ul{
+            display: block;
+            padding: 2rem;
+        }
+        #logo{
+            font-size: 5rem;
+        }
+        
+    }
+
+    @media screen and (max-width:420px){
+        body{
+            width: 100%;
+        }    
+        nav{
+                text-align: center;
+            }
+            nav ul{
+                display: block;
+                padding: 2rem;
+            }
+            #logo{
+                font-size: 5rem;
+            }
+            
+        }

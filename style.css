@@ -95,7 +95,12 @@ nav ul{
 
 .hero h3{
     padding: 5rem;
+    text-shadow: 5px 5px 5px black;
 }
+.hero h2{
+    text-shadow: 5px 5px 5px black;
+}
+
 
 
 

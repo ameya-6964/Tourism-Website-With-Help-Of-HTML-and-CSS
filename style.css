@@ -100,11 +100,14 @@ nav ul{
 .hero h2{
     text-shadow: 5px 5px 5px black;
 }
+/* LOCATION SECTION */
+#locations{
+    min-height: 100vh;
+}
 
 
 
-
-
+/* Media Queries */
 @media screen and (max-width:1050px){
 html{
     font-size: 45%;

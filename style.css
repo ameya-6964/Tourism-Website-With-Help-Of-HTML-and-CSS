@@ -47,6 +47,10 @@ button{
     color: white;
     font-size: 1.8rem;
     cursor: pointer;
+    transition: background 1s ease;
+}
+button:hover{
+    background: #1f2d3e ;
 }
 
 /* Nav Section */
@@ -103,9 +107,58 @@ nav ul{
 /* LOCATION SECTION */
 #locations{
     min-height: 100vh;
+    background :linear-gradient(rgba(0,0,0,0.5), transparent),url("/media/img/new-york-page.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
+.locations-head
+{
+  width: 90%;
+  margin: auto;
+}
 
+.locations-head h2{
+    padding: 1rem 0rem;
+    text-decoration: underline;
+}
+
+.locations-head h3
+{
+    padding: 4rem 0rem;
+}
+
+.cloud{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.moving-cloud-1{
+    animation: cloudAnimation 3s ease-in-out alternate infinite;
+}
+
+.moving-cloud-2{
+   top:20%;
+   z-index: -1;
+   opacity: 0.5;
+   animation: cloudAnimation 3.5s ease-in-out alternate infinite;
+
+}
+/*  Animation */
+@keyframes cloudAnimation {
+
+ from{
+transform: translate(10%,-10%);
+ }
+to{
+transform: translate(0%,0%);
+}
+
+}
 
 /* Media Queries */
 @media screen and (max-width:1050px){
@@ -114,44 +167,21 @@ html{
 }
     nav{
         text-align: center;
-
+    }
+    nav li{
+        margin-left: 1rem;
     }
     #logo{
       padding: 2rem;
     }
+    .cloud{
+        height: 70rem;
+    }
+    .moving-cloud-1{
+        z-index: -1;
+    }
+    .moving-cloud-2{
+        z-index: -2;
+    }
 }
 
-
-@media screen and (max-width:400px){
-    body{
-        width: 100%;
-    }    
-    nav{
-            text-align: center;
-        }
-        nav ul{
-            display: block;
-            padding: 2rem;
-        }
-        #logo{
-            font-size: 5rem;
-        }
-        
-    }
-
-    @media screen and (max-width:420px){
-        body{
-            width: 100%;
-        }    
-        nav{
-                text-align: center;
-            }
-            nav ul{
-                display: block;
-                padding: 2rem;
-            }
-            #logo{
-                font-size: 5rem;
-            }
-            
-        }

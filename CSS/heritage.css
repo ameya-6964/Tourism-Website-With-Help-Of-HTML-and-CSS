@@ -1,0 +1,209 @@
+/* Global Styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;   /* 1 rem = 10 px s */
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 2.6rem;
+}
+
+li,label,input,button,p{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 4.8rem;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4,h5{
+    font-size: 2.8rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+button{
+    padding: 2rem 6rem;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 1s ease;
+}
+button:hover{
+    background: #1f2d3e ;
+}
+
+/* Nav Section */
+.main-head{
+    background-color: #131c27;
+    color: white;
+}
+
+nav{
+    padding: 2rem;
+    min-height: 10vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    display: flex;
+    flex: 3 1 40rem;           /* for spacing Between List Elements */
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo{
+    flex: 2 1 40rem;    /* for spacing Between Logo */
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 400;
+}
+/*  heritage Hero Section */
+
+.hero-heritage{
+    min-height: 90vh;
+    background :linear-gradient(rgba(0,0,0,0.5), transparent), url("/media/img/heritage\ Landing\ Page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-heritage h3{
+    padding: 5rem;
+    text-shadow: 5px 5px 5px black;
+}
+.hero-heritage h2{
+    text-shadow: 5px 5px 5px black;
+}
+
+.heritage-benefits-head{
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    
+}
+.heritage-benefits-head h3{
+    padding: 1rem;
+}
+
+.cards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    text-align: center;
+    flex: 1 1 25rem;
+    min-height: 50vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3), 0px 20px 20px rgba(0, 0, 0, 0.3)
+}
+
+.cards img{
+    max-height: 21rem;
+    max-width: 40rem;
+    margin: 2rem;
+}
+
+.card h4{
+    padding: 1rem;
+}
+.card p {
+    padding: 1rem;
+}
+
+.card-icon{
+    background: #1f2d3e;
+}
+ 
+.heritage-benefits-button{
+    margin-top: 1rem;
+    padding: 2rem;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 1s ease;
+}
+
+.card-icon:hover{
+    scale: 1.5;
+}
+
+/*  Footer   */
+.footer{
+    min-height: 10rem;
+background-color: #1f2d3e;
+color:#fff;
+font-size:1rem;
+text-align: center;
+padding-top: 3rem;
+
+}
+
+/* Media Queries */
+@media screen and (max-width:1050px){
+    html{
+        font-size: 45%;
+    }
+        nav{
+            text-align: center;
+        }
+        nav li{
+            margin-left: 1rem;
+        }
+        #logo{
+          padding: 2rem;
+        }
+        .cloud{
+            height: 70rem;
+        }
+        .moving-cloud-1{
+            z-index: -1;
+        }
+        .moving-cloud-2{
+            z-index: -2;
+        }
+    }
+    

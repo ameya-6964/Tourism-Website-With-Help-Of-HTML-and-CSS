@@ -1,0 +1,204 @@
+/* Global Styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;   /* 1 rem = 10 px s */
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 2.6rem;
+}
+
+li,label,input,button,p{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 4.8rem;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4,h5{
+    font-size: 2.8rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+button{
+    padding: 2rem 6rem;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 1s ease;
+}
+button:hover{
+    background: #135b35 ;
+}
+
+/* Nav Section */
+.main-head{
+    background-color: #131c27;
+    color: white;
+}
+
+nav{
+    padding: 2rem;
+    min-height: 10vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    display: flex;
+    flex: 3 1 40rem;           /* for spacing Between List Elements */
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo{
+    flex: 2 1 40rem;    /* for spacing Between Logo */
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 400;
+}
+/* LOCATION SECTION */
+#locations{
+    min-height: 100vh;
+    background :linear-gradient(rgba(0,0,0,0.5), transparent),url("/media/img/rajmachi1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.locations-head
+{
+  width: 90%;
+  margin: auto;
+}
+
+.locations-head h2{
+    padding: 1rem 0rem;
+    color: rgb(255, 255, 252);
+    text-shadow: 5px 5px 5px black;
+}
+
+.locations-head h3
+{
+    padding: 4rem 0rem;
+    color: rgb(253, 253, 251);
+    text-shadow: 5px 5px 5px black;
+}
+
+/* Benefits Section */
+
+.benefits-head{
+    background:  #2e935d;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+   
+}
+.benefits-head h3{
+    padding: 1rem;
+}
+
+.cards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    text-align: center;
+    flex: 1 1 25rem;
+    min-height: 30vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3), 0px 20px 20px rgba(0, 0, 0, 0.3)
+}
+
+.cards img{
+    max-width: 15%;
+    margin: 2rem;
+}
+
+.card h4{
+    padding: 1rem;
+}
+.card p {
+    padding: 1rem;
+}
+
+.card-icon{
+    background: #2e935d;
+}
+ 
+
+ .footer{
+    min-height: 10rem;
+background-color: #1f2d3e;
+color:#fff;
+font-size:1rem;
+text-align: center;
+padding-top: 3rem;
+
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width:1050px){
+html{
+    font-size: 45%;
+}
+    nav{
+        text-align: center;
+    }
+    nav li{
+        margin-left: 1rem;
+    }
+    #logo{
+      padding: 2rem;
+    }
+    #locations{
+        font-size: 5rem;
+    }
+    .footer{
+        font-size: 1rem;
+    }
+    
+}
+
+

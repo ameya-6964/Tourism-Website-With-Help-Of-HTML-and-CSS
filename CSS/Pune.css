@@ -48,9 +48,10 @@ button{
     font-size: 1.8rem;
     cursor: pointer;
     transition: background 1s ease;
+    margin-bottom: 5rem;
 }
 button:hover{
-    background: #1f2d3e ;
+    background: #135b35 ;
 }
 
 /* Nav Section */
@@ -82,32 +83,41 @@ nav ul{
     font-family: 'Pattaya', sans-serif;
     font-weight: 400;
 }
-/*  heritage Hero Section */
-
-.hero-heritage{
-    min-height: 90vh;
-    background :linear-gradient(rgba(0,0,0,0.5), transparent), url("/media/img/heritage\ Landing\ Page.jpg");
-    background-repeat: no-repeat;
+/* LOCATION SECTION */
+#locations{
+    min-height: 100vh;
+    background :linear-gradient(rgba(0,0,0,0.5), transparent),url("/media/img/puneheritage.jpg");
     background-size: cover;
     background-position: center;
-    color:white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.hero-heritage h3{
-    padding: 5rem;
-    text-shadow: 5px 5px 5px black;
+.locations-head
+{
+  width: 90%;
+  margin: auto;
 }
-.hero-heritage h2{
+
+.locations-head h2{
+    padding: 1rem 0rem;
+    color: rgb(255, 255, 252);
     text-shadow: 5px 5px 5px black;
 }
 
-.heritage-benefits-head{
-    background: #343c44;
+.locations-head h3
+{
+    padding: 4rem 0rem;
+    color: rgb(253, 253, 251);
+    text-shadow: 5px 5px 5px black;
+}
+
+/* Benefits Section */
+
+.benefits-head{
+    background:  #2e935d;
     padding: 3rem;
     min-height: 30vh;
     display: flex;
@@ -116,9 +126,10 @@ nav ul{
     align-items: center;
     color: white;
     text-align: center;
-    
+    text-shadow: 5px 5px 5px black;
+   
 }
-.heritage-benefits-head h3{
+.benefits-head h3{
     padding: 1rem;
 }
 
@@ -134,14 +145,13 @@ nav ul{
 .card{
     text-align: center;
     flex: 1 1 25rem;
-    min-height: 50vh;
+    min-height: 30vh;
     margin: 2rem 5rem;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3), 0px 20px 20px rgba(0, 0, 0, 0.3)
 }
 
 .cards img{
-    max-height: 21rem;
-    max-width: 40rem;
+    max-width: 15%;
     margin: 2rem;
 }
 
@@ -153,26 +163,11 @@ nav ul{
 }
 
 .card-icon{
-    background: #1f2d3e;
+    background: #2e935d;
 }
  
-.heritage-benefits-button{
-    margin-top: 0.5rem;
-    padding: 2rem;
-    background: #4c6e97;
-    border: none;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
-    transition: background 1s ease;
-}
 
-.card-icon:hover{
-    scale: 1.5;
-}
-
-/*  Footer   */
-.footer{
+ .footer{
     min-height: 10rem;
 background-color: #1f2d3e;
 color:#fff;
@@ -182,22 +177,29 @@ padding-top: 3rem;
 
 }
 
+
+
 /* Media Queries */
 @media screen and (max-width:1050px){
-    html{
-        font-size: 45%;
+html{
+    font-size: 45%;
+}
+    nav{
+        text-align: center;
     }
-        nav{
-            text-align: center;
-        }
-        nav li{
-            margin-left: 1rem;
-        }
-        #logo{
-          padding: 2rem;
-        }
-        .cards{
-            margin-right: auto;
-        }
+    nav li{
+        margin-left: 1rem;
+    }
+    #logo{
+      padding: 2rem;
+    }
+    #locations{
+        font-size: 5rem;
+    }
+    .footer{
+        font-size: 1rem;
     }
     
+}
+
+

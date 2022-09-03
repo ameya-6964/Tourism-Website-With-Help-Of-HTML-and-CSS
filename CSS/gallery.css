@@ -1,3 +1,4 @@
+
 /* Global Styling */
 
 *{
@@ -82,11 +83,36 @@ nav ul{
     font-family: 'Pattaya', sans-serif;
     font-weight: 400;
 }
+
+.hero{
+    min-height: 90vh;
+    background :linear-gradient(rgba(0,0,0,0.5), transparent), url("/media/img/Ajantabanner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3{
+    padding: 5rem;
+    text-shadow: 5px 5px 5px black;
+}
+.hero h2{
+    text-shadow: 5px 5px 5px black;
+}
+
+
+
 /*  heritage Hero Section */
 
 .hero-heritage{
     min-height: 90vh;
-    background :linear-gradient(rgba(0,0,0,0.5), transparent), url("/media/img/heritage\ Landing\ Page.jpg");
+    background :linear-gradient(rgba(0,0,0,0.5), transparent), url("/media/img/galeerybanner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -124,7 +150,7 @@ nav ul{
 
 .cards{
     width: 90%;
-    margin: auto;
+    margin: auto; 
     display: flex;
     min-height: 70vh;
     align-items: center;
@@ -134,13 +160,13 @@ nav ul{
 .card{
     text-align: center;
     flex: 1 1 25rem;
-    min-height: 50vh;
+    min-height: 40vh;
     margin: 2rem 5rem;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3), 0px 20px 20px rgba(0, 0, 0, 0.3)
 }
 
 .cards img{
-    max-height: 21rem;
+    max-height: 25rem;
     max-width: 40rem;
     margin: 2rem;
 }
@@ -167,13 +193,8 @@ nav ul{
     transition: background 1s ease;
 }
 
-.card-icon:hover{
-    scale: 1.5;
-}
-
-/*  Footer   */
 .footer{
-    min-height: 10rem;
+ min-height: 10rem;
 background-color: #1f2d3e;
 color:#fff;
 font-size:1rem;
@@ -182,7 +203,9 @@ padding-top: 3rem;
 
 }
 
-/* Media Queries */
+
+
+/*   Media Queries  */
 @media screen and (max-width:1050px){
     html{
         font-size: 45%;
@@ -196,8 +219,11 @@ padding-top: 3rem;
         #logo{
           padding: 2rem;
         }
+       
+        .footer{
+            font-size: 1rem;
+        }
         .cards{
             margin-right: auto;
         }
     }
-    

@@ -82,11 +82,10 @@ nav ul{
     font-family: 'Pattaya', sans-serif;
     font-weight: 400;
 }
-/*  heritage Hero Section */
 
-.hero-heritage{
+.hero{
     min-height: 90vh;
-    background :linear-gradient(rgba(0,0,0,0.5), transparent), url("/media/img/heritage\ Landing\ Page.jpg");
+    background :linear-gradient(rgba(0,0,0,0.5), transparent), url("/media/img/landing-page.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -98,81 +97,96 @@ nav ul{
     text-align: center;
 }
 
-.hero-heritage h3{
+.hero h3{
     padding: 5rem;
     text-shadow: 5px 5px 5px black;
 }
-.hero-heritage h2{
+.hero h2{
     text-shadow: 5px 5px 5px black;
 }
 
-.heritage-benefits-head{
-    background: #343c44;
-    padding: 3rem;
-    min-height: 30vh;
+/* Forms Section */
+
+.form-style{
+    min-height: 90vh;
+    background :linear-gradient(rgba(0,0,0,0.5), transparent), url("/media/img/hotel-booking.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
     text-align: center;
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px black;
+}
+
+
+
+
+
+div.elem-group {
+    margin: 2rem 2rem;
     
-}
-.heritage-benefits-head h3{
-    padding: 1rem;
-}
-
-.cards{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    min-height: 70vh;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.card{
-    text-align: center;
-    flex: 1 1 25rem;
-    min-height: 50vh;
-    margin: 2rem 5rem;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3), 0px 20px 20px rgba(0, 0, 0, 0.3)
-}
-
-.cards img{
-    max-height: 21rem;
-    max-width: 40rem;
-    margin: 2rem;
-}
-
-.card h4{
-    padding: 1rem;
-}
-.card p {
-    padding: 1rem;
-}
-
-.card-icon{
-    background: #1f2d3e;
-}
- 
-.heritage-benefits-button{
-    margin-top: 0.5rem;
-    padding: 2rem;
-    background: #4c6e97;
+  }
+  
+  div.elem-group.inlined {
+    width: 50%;
+    display: inline-block;
+    margin-left: 1%;
+  }
+  
+  label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 10px;
+    font-size: 2rem;
+  }
+  
+  input, select, textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-family: 'Nanum Gothic';
+    width: 100%;
+    padding: 10px;
+  }
+  
+  div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+  }
+  
+  textarea {
+    height: 250px;
+  }
+  
+  hr {
+    border: 1px dotted #ccc;
+  }
+  
+  button {
+    height: 50px;
+    background: orange;
     border: none;
     color: white;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-family: 'Nanum Gothic';
+    border-radius: 4px;
     cursor: pointer;
-    transition: background 1s ease;
-}
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  button:hover {
+    border: 2px solid black;
+  }
 
-.card-icon:hover{
-    scale: 1.5;
-}
 
-/*  Footer   */
-.footer{
+  .footer{
     min-height: 10rem;
 background-color: #1f2d3e;
 color:#fff;
@@ -182,7 +196,8 @@ padding-top: 3rem;
 
 }
 
-/* Media Queries */
+
+
 @media screen and (max-width:1050px){
     html{
         font-size: 45%;
@@ -196,8 +211,14 @@ padding-top: 3rem;
         #logo{
           padding: 2rem;
         }
-        .cards{
+        .form-style{
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
             margin-right: auto;
+        }
+        .footer{
+            font-size: 1rem;
         }
     }
     

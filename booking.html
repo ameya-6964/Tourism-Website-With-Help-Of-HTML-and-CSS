@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MTourism Website | Maharashtra Tourism</title>
+    <link rel="icon" href="/media/icons/airplane.svg" />
+    <link rel="stylesheet" href="/CSS/hotel.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <h1 id="logo">MTourism</h1>
+        <ul>
+          <li><a href="Home.html"> Home </a></li>
+          <li><a href="heritage.html"> Heritage </a></li>
+          <li><a href="booking.html"> Booking </a></li>
+          <li><a href="gallery.html"> Gallery </a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <h2>Book Hotel Now</h2>
+      <h3>Get Extra 20% OFF</h3>
+      <button>Book Now</button>
+    </section>
+    <section class="form-style">
+      <form action="">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="visitor_name"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="Your Email"
+            placeholder="abc@xyz.com"
+            required
+          />
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="visitor_phone"
+            placeholder="+91-XXXXXXXXX"
+            required
+          />
+        </div>
+        <br />
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input
+            type="number"
+            id="adult"
+            name="Number Of Adults"
+            placeholder="2"
+            min="1"
+            required
+          />
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children</label>
+          <input
+            type="number"
+            id="child"
+            name="Total Number Of Children"
+            placeholder="2"
+            min="0"
+            required
+          />
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Check-in Date</label>
+          <input type="date" id="checkin-date" name="checkin" required />
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkout-date">Check-out Date</label>
+          <input type="date" id="checkout-date" name="checkout" required />
+        </div>
+        <div class="elem-group">
+          <label for="room-selection">Select Room Preference</label>
+          <select id="room-selection" name="room_preference" required>
+            <option value="">Choose a Room from the List</option>
+            <option value="connecting">Standard</option>
+            <option value="adjoining">Deluxe</option>
+            <option value="adjacent">Premium</option>
+          </select>
+        </div>
+        <hr />
+        <div class="elem-group">
+          <label for="message">Anything Else?</label>
+          <textarea
+            id="message"
+            name="visitor_message"
+            placeholder="Tell us anything else that might be important."
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Book The Rooms</button>
+      </form>
+    </section>
+    <section class="footer">
+      <p>
+        Copyright © Travel Agency<strong> Developed By Ameya </strong>| Contact
+        Us: +91 7715006964
+      </p>
+    </section>
+  </body>
+</html>

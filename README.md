@@ -16,3 +16,7 @@ This Website Has
 
 4) GALLERY PAGE
 ![HERITAGE PAGE](https://user-images.githubusercontent.com/104457295/192562733-17df367f-d2bb-401e-b579-680640379191.jpg)
+
+### This Site Is Deployed Live On This Link https://mtourism-css.netlify.app html Do Visit
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0d5e1f00-3e27-4db1-bf69-b591c2f0cf1a/deploy-status)](https://app.netlify.com/sites/mtourism-css/deploys)
